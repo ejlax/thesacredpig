@@ -1,14 +1,18 @@
 
 <!DOCTYPE html> 
 <html>
+<style>
+
+</style>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Multi-page template</title> 
+    <title>The Sacred Pig</title> 
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova-2.5.0.js"></script>
 </head> 
 
     
@@ -28,13 +32,16 @@
         <h1>The Sacred Pig</h1>
     </div><!-- /header -->
 
-    <div data-role="content" align="center" data-theme="a"> 
-        <h2 align="center">Welcome to the Sacred Pig</h2>
-        <img src="https://dl.dropboxusercontent.com/u/14936926/sacredpig_main_300.png">
-        <h3 style='font-style: italic;'>"Rub on it!"</h3>
-           <div class="fb-like" data-href="https://www.facebook.com/pages/The-Sacred-Pig/174190429324084" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="segoe ui"></div>
-    <!-- Place this tag where you want the +1 button to render. -->
-<div align="center"><div class="g-plusone" data-size="tall" data-annotation="inline" data-width="450" href="http://www.thesacredpig.com">
+    <div data-role="content" data-theme="a"> 
+        <div><h2 align="center">Welcome to the Sacred Pig</h2>
+        <img id="turn_on" src="https://dl.dropboxusercontent.com/u/14936926/sacredpig_main_300.png">
+        <h3 align="center" style='font-style: italic;'>"Rub on it!"</h3></div>
+        <div id="social">
+            <ul>
+                <div id="facebook">
+<div class="fb-like" data-href="https://www.facebook.com/pages/The-Sacred-Pig/174190429324084" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true"></div>
+            </div>
+            <div id="gplus"><div align="center"><div class="g-plusone" data-size="tall" data-annotation="bubble" data-width="450" href="http://www.thesacredpig.com">
 
 <!-- Place this tag after the last +1 button tag. -->
 <script type="text/javascript">
@@ -43,16 +50,25 @@
     po.src = 'https://apis.google.com/js/plusone.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
-</script></div></div>  
+</script></div>
+        </div>
+    </div>
+</div>
+  
 
-        <p><a href="#locale" ata-rel="dialog" data-transition="slide" data-role="button">Come Find Us!</a></p>
-        <p><a href="#schedule" data-role="button">Where We'll Be Next</a></p>    
+        <p><a href="#locale" data-transition="slide" data-role="button">Come Find Us!</a></p>
+        <p><a href="#schedule" data-transition="slide" data-role="button">Where We'll Be Next</a></p>    
         <p><a href="#menu" data-role="button" data-transition="slide">What to Eat</a></p>
     </div><!-- /content -->
     
     <div data-role="footer" data-theme="a" data-position="fixed">
         <h4>Page Footer</h4>
     </div><!-- /footer -->
+    <script>
+    $("#turn_on").live('click', function(){
+        alert("Rub my Belly!");
+    });
+    </script>
 </div><!-- /page one -->
 
 
@@ -60,14 +76,54 @@
 <div data-role="page" id="locale" data-theme="a">
 
     <div data-role="header">
-        <h1>Two</h1>
+        <h1>Here We Are!</h1>
     </div><!-- /header -->
 
     <div data-role="content" data-theme="a">    
-        <h2>Two</h2>
-        <p>I have an id of "two" on my page container. I'm the second page container in this multi-page template.</p>   
-        <p>Notice that the theme is different for this page because we've added a few <code>data-theme</code> swatch assigments here to show off how flexible it is. You can add any content or widget to these pages, but we're keeping these simple.</p>  
+    <p><a href="#" data-role="button" id="locale" onclick=initiateGeolocation();>Test</a></p>
+
+    <div id="map"></div>
+    
+    </div>
+
+<script type="text/javascript" src="jscolor/jscolor.js"></script>
+    <script>
+
+    function initiateGeolocation (){
+    navigator.geolocation.getCurrentPosition(handle_geolocation_query,handle_errors);
+
+    }
+    function handle_errors(error){
+    alert('error');
+    }
+
+    function handle_geolocation_query(position){
+    alert('latitude: ' + position.coords.latitude + ' Longitude: ' + position.coords.longitude);
+    
+    var url = "http://maps.google.com/maps/api/staticmap?sensor=false&center="
+    + position.coords.latitude + ","
+    + position.coords.longitude
+    + "&zoom=15&size=300x400&markers=color:blue|"
+    + "labels:S|"
+    + position.coords.latitude + ","
+    + position.coords.longitude;
+
+    alert(url);
+    $("#map").remove();
+    $(document.body).append(
+        $(document.createElement("img"))
+        .attr("src",url)
+        .attr("id","map")
+        );
+
+    };
+
+    
+    </script>
         <p><a href="#home" data-direction="reverse" data-transition="slide" data-role="button" data-theme="a">Back to page "one"</a></p> 
+    </div>
+</div>
+</div>
         
     </div><!-- /content -->
     
