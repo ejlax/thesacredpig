@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>Mobilize</title> 
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png"/>
+    <script>
+		if (window.screen.height==568) { // iPhone 4"
+		document.querySelector("meta[name=viewport]").content="width=320.1";
+		}
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+    <link rel="stylesheet" href="assets/css/style1.css">
+
+    <!-- scripts -->
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	<script src="assets/js/screen.js"></script>
+    
+</head> 
+<body>
+
+<div data-role="page">
+	
+        <!-- header -->
+    <div data-role="header" data-theme="e">
+        <a style="position: fixed; z-index: 10000" href="index.html" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" data-rel="back">Back</a>
+        <h1>The Sacred Pig</h1>
+        <a style="position: fixed; z-index: 10000" href="index.html" data-icon="home" data-iconpos="notext" rel="external" class="ui-btn-right">Home</a>
+    </div>
+    <!--/header --> 
+    
+    
+    
+    <!-- main content -->
+    <div data-role="content">
+    
+    <!-- banner & title -->
+	<div class="bannerContainer">
+		<img src="assets/images/demo/slides/logo.jpg" class="banner">	
+    </div>
+  	    <h2 style="top: 0; z-index:9999; position: fixed;" class="pageTitle"><span align="center">About</span></h2>
+
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+	<!-- /banner & title -->
+    
+    <div class="content-padd">
+    
+    
+    	
+	<h4>A Story for the stomach!</h4>
+       
+       
+       	<p>In Georgia, BBQ is more than a source of nourishment - it’s a lifestyle, a religion. For 31 years, Jeffery studied the time-honored art of combining slow smoke and cider vinegar to create a masterpiece few can resist. A pulled pork so juicy and succulent, the heavens sing its praises.
+Once his skills were honed and perfected, he set out to share his message with all willing to partake of it. Shortly after arriving in Utah in 2010, Jeff was bombarded with the lamentations of the people. They were deprived of true BBQ and wandered soullessly from one establishment to the next only to be let down or manipulated into thinking that what they ate was good.</p><p> At that moment his mission was clear, he would show the people the true meaning of BBQ. He would teach them BBQ is not hamburgers and hot dogs cooked on the grill (that would be grilling) nor is it pork loin cooked in a crock pot and doused in store-bought ketchup and molasses-based sauce. It is pork shoulder and baby back ribs slow smoked to perfection using a secret dry-rub recipe with cider and mustard base sauces waiting patiently on the side until the moment their testimony would be needed to convince the people that this was right and good and true BBQ. He would bring the people "The Sacred Pig".</p><p>
+And so it was. And so it shall be.</p>
+
+
+    </div><!-- /content padd -->
+	</div><!-- /content -->
+	
+	<!-- footer -->
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="custom-icons" data-grid="c" >
+            <ul>
+                <li><a href="http://bit.ly/yx2mXZ" id="map" data-icon="custom" data-theme="b">Find Us!</a></li>
+                <li><a href="tel:18005551234" id="cell" data-icon="custom" data-theme="b">Call Us</a></li>
+                <li><a href="portfolio.html#Gallery2" id="brush" data-icon="custom" data-theme="b" data-ajax="false">Pics</a></li>
+                <li><a href="twitter.html" id="twitter" data-icon="custom" data-theme="b">Tweets</a></li>
+            </ul>
+        </div>
+       
+    </div>
+	<!-- /footer -->
+
+	
+</div><!-- /page -->
+
+ 
+</body>
+</html>

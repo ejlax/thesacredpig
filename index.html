@@ -1,5 +1,5 @@
-
 <!DOCTYPE html> 
+<<<<<<< HEAD
 <html>
 <style>
 
@@ -29,9 +29,106 @@
 <div data-role="page" id="home">
 
     <div data-role="header">
-        <h1>The Sacred Pig</h1>
-    </div><!-- /header -->
+=======
+<html> 
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>The Sacred Pig</title> 
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png"/>
+    <script>
+		if (window.screen.height==568) { // iPhone 4"
+		document.querySelector("meta[name=viewport]").content="width=320.1";
+		}
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+    <link rel="stylesheet" href="assets/css/style1.css">
 
+    <!-- scripts -->
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova-2.5.0.js"></script>
+	<script src="assets/js/screen.js"></script> 
+
+    
+</head>
+<body>
+
+
+<div id="home-page" data-role="page">
+
+	<!-- slider -->
+	<script>
+		jQuery(function(){
+			jQuery('#camera_wrap').camera({	
+			loader:'none',
+            fx: 'scrollRight',
+            fx:'scrollBottom',
+            fx: 'simpleFade'	
+			});
+		});
+	</script>
+
+
+	<!-- /slider -->
+    
+    <!-- header -->
+	<div data-role="header" data-theme="e">
+>>>>>>> complete rewrite
+        <h1>The Sacred Pig</h1>
+	</div>
+    <!--/header --> 
+    
+
+ 
+	<!-- main content -->
+  	<div data-role="content">    
+    
+    <!-- slider -->
+    <div class="slider-outer">
+    	<div class="slider-container">
+			<div id="camera_wrap">
+            
+            <div data-src="assets/images/demo/slides/logo.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    Best Pulled Pork West of the Mississippi
+                </div>
+            </div>
+            
+            <div data-src="assets/images/demo/slides/girl-eating-ribs.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     Just how momma made it!
+                </div>
+            </div>
+            
+            <div data-src="assets/images/demo/slides/smoke-trailer.jpg">
+            	<div class="camera_caption fadeFromBottom">
+                     Just how momma made it!
+                </div>
+            </div>
+            <div data-src="assets/images/demo/slides/smoked-ribs_body1.jpg">
+                <div class="camera_caption fadeFromBottom">
+                     Smoked for 16 long hours!
+                </div>
+            </div>
+            
+     		</div>
+		</div>
+        <br class="clear" />
+	</div><!-- /slider -->  
+    
+	<div class="shadow1box">
+		<img src="assets/images/shadow1.png" class="shadow1" alt="shadow">
+	</div>
+    
+    <div class="content-padd">
+  
+
+<<<<<<< HEAD
     <div data-role="content" data-theme="a"> 
         <div><h2 align="center">Welcome to the Sacred Pig</h2>
         <img id="turn_on" src="https://dl.dropboxusercontent.com/u/14936926/sacredpig_main_300.png">
@@ -70,11 +167,251 @@
     });
     </script>
 </div><!-- /page one -->
+=======
+		<!-- navigation -->
+		<ul data-role="listview" data-inset="true" id="listview" style="margin-bottom:0px">
+			 
+            <li><a href="#schedule" data-transition="slide" >Where We'll be Next!</a></li>
+			<li><a href="#about" data-transition="flow" >About</a></li>
+    		<li><a href="#menu"  data-transition="flow" data-prefetch>Menu</a></li>
+
+        </ul>
+        <!-- /navigation -->  
+    
+	<!-- social -->
+    <div class="social">
+    	<a href="https://www.facebook.com/pages/The-Sacred-Pig/174190429324084"><img src="assets/images/social/fb-b.png" alt="facebook"></a>
+    	<a href="http://twitter.com/thesacredpig"><img src="assets/images/social/twitter2-b.png" alt="twitter"></a>
+    	<a href="#"><img src="assets/images/social/linkedin-b.png" alt="linkedin"></a>
+        <a href="//plus.google.com"><img src="assets/images/social/plus.png" alt="google+"></a>
+        <a href="//yelp.com"><img src="assets/images/social/yelp-b.png" alt="yelp"></a>
+    </div>
+    <!-- /social -->
+
+        
+	</div><!-- /content padd -->
+	</div><!-- /content -->    
+    
+    
+    <!-- footer -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar" class="custom-icons" data-grid="c" >
+			<ul>
+				<li><a href="http://bit.ly/yx2mXZ" id="map" data-icon="custom" data-theme="b">Find Us!</a></li>
+				<li><a href="tel:18005551234" id="cell" data-icon="custom" data-theme="b">Call Us</a></li>
+				<li><a href="portfolio.html#Gallery2" id="brush" data-icon="custom" data-theme="b" data-ajax="false">Pics</a></li>
+				<li><a href="twitter.html" id="twitter" data-icon="custom" data-theme="b">Tweets</a></li>
+			</ul>
+		</div>
+       
+	</div>
+	<!-- /footer -->
+	
+</div><!-- /page -->
+<!--  // SCHEDULE // -->
+<div data-role="page" id="schedule">
+
+    <!-- header -->
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="e">
+        <a href="index.html" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" data-rel="back">Back</a>
+        <h1> Upcoming Locations</h1>
+        <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse"  rel="external" class="ui-btn-right">Home</a>
+    </div>
+    <!--/header -->
+    
+    <!-- main content -->
+    <div data-role="content">
+    
+    <!-- banner & title -->
+    <!--  <h2 class="pageTitle"><span align="center">Upcoming Locations</span></h2>  -->
+    
+    <!-- /banner & title -->
+    
+    <div class="content-padd">
+
+    <!-- list begins -->
+    <div class="padd">
+    <div class="events-list">
+        
+
+        <ul class="ui-listview" data-filter-theme="e" data-filter-placeholder="Search location..." data-filter="true" data-role="listview">
+
+        <li data-role="list-divider" >
+            Monday, April 29, 2013
+                <span class="ui-li-count">2</span>
+        </li>
+        
+        <li  class="ui-btn-icon-right ui-li-has-arrow">
+            <div class="ui-btn-inner ui-li" aria-hidden="true">
+                <div class="ui-btn-text" data-role="collapsible-set">
+                    <a class="ui-link-inherit" href="#location">
+                        <p class="ui-li-aside ui-li-desc" >
+                            <strong>6:00</strong>
+                            PM                      </p>
+                        <h3 class="ui-li-heading">University of Utah (DESB)</h3>
+                            <p class="ui-li-desc">
+                                <strong>First of many events taking place in Salt Lake City, UT</strong>                            </p>
+                                <p class="ui-li-desc">Mark your calendar, this is going to be great! Plus its free!!!</p>
+                    </a>                </div>
+                    <div data-role="collapsible">This is a test</div>
+            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>            </div>
+        </li>
+
+        <li class="ui-btn-icon-right ui-li-has-arrow">
+            <div class="ui-btn-inner ui-li" aria-hidden="true" >
+                <div class="ui-btn-text">
+                    <a class="ui-link-inherit" href="demo-page.html">
+                        <p class="ui-li-aside ui-li-desc" >
+                            <strong>10:30</strong>
+                            AM                      </p>
+                        <h3 class="ui-li-heading">WordPress Brunch</h3>
+                            <p class="ui-li-desc">
+                                <strong>Come meet local WordPress enthusiasts.</strong>                         </p>
+                                <p class="ui-li-desc">Currently looking for guest speakers.</p>
+                    </a>                </div>
+            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>            </div>
+        </li>
 
 
-<!-- Start of second page: #locale -->
-<div data-role="page" id="locale" data-theme="a">
+        <li data-role="list-divider">
+            Wednesday, October 16, 2012
+                <span class="ui-li-count">4</span>
+        </li>
+        
+        <li class="ui-btn-icon-right ui-li-has-arrow">
+            <div class="ui-btn-inner ui-li" aria-hidden="true">
+                <div class="ui-btn-text">
+                    <a class="ui-link-inherit" href="demo-page.html">
+                        <p class="ui-li-aside ui-li-desc" >
+                            <strong>5:30</strong>
+                            PM                      </p>
+                        <h3 class="ui-li-heading">Dinner at Rex</h3>
+                            <p class="ui-li-desc">
+                                <strong>Burgers for everyone.</strong>                          </p>
+                                <p class="ui-li-desc">Come join local burger enthusiasts.</p>
+                    </a>                </div>
+            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>            </div>
+        </li>
+        
+        <li class="ui-btn-icon-right ui-li-has-arrow">
+            <div class="ui-btn-inner ui-li" aria-hidden="true">
+                <div class="ui-btn-text"  >
+                    <a class="ui-link-inherit" href="demo-page.html">
+                        <p class="ui-li-aside ui-li-desc" >
+                            <strong>2:00</strong>
+                            PM                      </p>
+                        <h3 class="ui-li-heading">Interior Decorating 101</h3>
+                            <p class="ui-li-desc">
+                                <strong>A new event with some top talent.</strong>                          </p>
+                                <p class="ui-li-desc">Curtains, rugs, and pillows galore.</p>
+                    </a>                </div>
+            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>            </div>
+        </li> 
+        
+        <li class="ui-btn-icon-right ui-li-has-arrow">
+            <div class="ui-btn-inner ui-li" aria-hidden="true">
+                <div class="ui-btn-text">
+                    <a class="ui-link-inherit" href="demo-page.html">
+                        <p class="ui-li-aside ui-li-desc">
+                            <strong>11:30</strong>
+                            AM                      </p>
+                        <h3 class="ui-li-heading">Photoshop Convention</h3>
+                            <p class="ui-li-desc">
+                                <strong>Shop &amp; Chop</strong>                            </p>
+                                <p class="ui-li-desc">Learn from top Photoshop experts.</p>
+                    </a>                </div>
+            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>            </div>
+        </li>
+        
 
+        
+        <li data-role="list-divider">
+            Sunday, December 20, 2012
+                <span class="ui-li-count">2</span>
+        </li>
+
+        <li class="ui-btn-icon-right ui-li-has-arrow">
+            <div class="ui-btn-inner ui-li" aria-hidden="true">
+                <div class="ui-btn-text">
+                    <a class="ui-link-inherit" href="demo-page.html">
+                        <p class="ui-li-aside ui-li-desc">
+                            <strong>11:30</strong>
+                            AM                      </p>
+                        <h3 class="ui-li-heading">CSS3 Tricks</h3>
+                            <p class="ui-li-desc">
+                                <strong>Tables are gone, gradients are here.</strong>                           </p>
+                                <p class="ui-li-desc">Great talks planned, be here!</p>
+                    </a>                </div>
+            <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>            </div>
+        </li>
+        
+
+
+    </ul>
+
+
+    </div>
+    </div>
+    <!-- list ends -->
+
+
+     
+    </div><!-- /content padd -->
+    </div><!-- /content -->
+    
+    <!-- footer -->
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="custom-icons">
+            <ul>
+                <li><a href="http://bit.ly/yx2mXZ" id="footprints" data-icon="custom" data-theme="b">Directions</a></li>
+                <li><a href="tel:18005551234" id="chat2" data-icon="custom" data-theme="b">Call Us</a></li>
+                <li><a href="portfolio.html" id="brush" data-icon="custom" data-theme="b" data-ajax="false">Portfolio</a></li>
+                <li><a href="twitter.html" id="twitter" data-icon="custom" data-theme="b" data-ajax="false">Tweets</a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <!-- /footer -->
+</div> <!-- /page -->
+>>>>>>> complete rewrite
+
+    <div data-role="page" id="location" >
+    
+    <!-- header -->
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="e">
+        <a href="index.html" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" data-rel="back">Back</a>
+        <h1>Univeristy of Utah</h1>
+        <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse"  rel="external" class="ui-btn-right">Home</a>
+    </div>
+    <!--/header -->
+    
+    
+    
+    <!-- main content -->
+    <div data-role="content">
+    <!-- banner & title -->
+    <div class="bannerContainer">
+        <a href="//maps.google.com/?daddr=University+Of+Utah,UT"><img src="http://maps.googleapis.com/maps/api/staticmap?center=University+of+Utah,UT&zoom=14&size=395x192&sensor=false&markers=color:blue|labels:s" class="banner"></a>
+    </div>
+    <h2 class="pageTitle"><span>April 29, 2013, @ 6:00pm</span></h2>
+    <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+    <!-- /banner & title -->
+    
+    <div class="content-padd">
+    
+    
+        
+    <h4>This is a demo page used for linking.</h4>
+    
+        
+   
+        <fieldset >
+            <div ><a data-icon="arrow-l" href="page-styles.html" data-role="button" data-direction="reverse"  rel="external" data-rel="back">Back</a></div>
+                   
+        </fieldset> 
+
+
+<<<<<<< HEAD
     <div data-role="header">
         <h1>Here We Are!</h1>
     </div><!-- /header -->
@@ -124,33 +461,163 @@
     </div>
 </div>
 </div>
-        
+=======
+
+     
+    </div><!-- /content padd -->
     </div><!-- /content -->
     
+    <!-- footer -->
     <div data-role="footer" data-position="fixed">
-        <h4>Page Footer</h4>
-    </div><!-- /footer -->
-</div><!-- /page two -->
+        <div data-role="navbar" class="custom-icons">
+            <ul>
+                <li><a href="http://bit.ly/yx2mXZ" id="map" data-icon="custom" data-theme="b">Directions</a></li>
+                <li><a href="tel:18005551234" id="phone2" data-icon="custom" data-theme="b">Call Us</a></li>
+                <li><a href="portfolio.html" id="brush" data-icon="custom" data-theme="b" data-ajax="false">Portfolio</a></li>
+                <li><a href="twitter.html" id="twitter" data-icon="custom" data-theme="b" data-ajax="false">Tweets</a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <!-- /footer -->
+
+    
+</div><!-- /page -->
+
+<div data-role="page" id="about">
+    
+    <!-- header -->
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="e">
+        <a href="index.html" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" data-rel="back">Back</a>
+        <h1> Upcoming Locations</h1>
+        <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse"  rel="external" class="ui-btn-right">Home</a>
+    </div>
+    <!--/header -->
+    
+    
+    
+    <!-- main content -->
+    <div data-role="content">
+    
+    <!-- banner & title -->
+    <div class="bannerContainer">
+        <img src="assets/images/demo/slides/logo.jpg" class="banner">   
+    </div>
+        <h2 style="top: 0; z-index:9999; position: fixed;" class="pageTitle"><span align="center">About</span></h2>
+
+        <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+    <!-- /banner & title -->
+    
+    <div class="content-padd">
+    
+    
+>>>>>>> complete rewrite
+        
+    <h4>A Story for the stomach!</h4>
+       
+       
+        <p>In Georgia, BBQ is more than a source of nourishment - it’s a lifestyle, a religion. For 31 years, Jeffery studied the time-honored art of combining slow smoke and cider vinegar to create a masterpiece few can resist. A pulled pork so juicy and succulent, the heavens sing its praises.
+Once his skills were honed and perfected, he set out to share his message with all willing to partake of it. Shortly after arriving in Utah in 2010, Jeff was bombarded with the lamentations of the people. They were deprived of true BBQ and wandered soullessly from one establishment to the next only to be let down or manipulated into thinking that what they ate was good.</p><p> At that moment his mission was clear, he would show the people the true meaning of BBQ. He would teach them BBQ is not hamburgers and hot dogs cooked on the grill (that would be grilling) nor is it pork loin cooked in a crock pot and doused in store-bought ketchup and molasses-based sauce. It is pork shoulder and baby back ribs slow smoked to perfection using a secret dry-rub recipe with cider and mustard base sauces waiting patiently on the side until the moment their testimony would be needed to convince the people that this was right and good and true BBQ. He would bring the people "The Sacred Pig".</p><p>
+And so it was. And so it shall be.</p>
 
 
-<!-- Start of third page: #menu -->
-<div data-role="page" id="menu">
-
-    <div data-role="header" data-theme="a">
-        <h1>Sacred Pig</h1>
-    </div><!-- /header -->
-
-    <div data-role="content" data-theme="a">    
-        <h2>What to Eat</h2>
-        <p>The Menu is going to go here.</p>      
-        <p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to page "one"</a></p> 
+    </div><!-- /content padd -->
     </div><!-- /content -->
     
+    <!-- footer -->
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="custom-icons" data-grid="c" >
+            <ul>
+                <li><a href="http://bit.ly/yx2mXZ" id="map" data-icon="custom" data-theme="b">Find Us!</a></li>
+                <li><a href="tel:18005551234" id="cell" data-icon="custom" data-theme="b">Call Us</a></li>
+                <li><a href="portfolio.html#Gallery2" id="brush" data-icon="custom" data-theme="b" data-ajax="false">Pics</a></li>
+                <li><a href="twitter.html" id="twitter" data-icon="custom" data-theme="b">Tweets</a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <!-- /footer -->
+
+    
+</div><!-- /page -->
+
+<!--  Menu -->
+<div data-role="page" id="menu">
+    
+    <!-- header -->
+    <div data-role="header" class="page-header" data-add-back-btn="true">
+        <a href="index.html" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" data-rel="back">Back</a>
+            <div class="logo"></div>
+        <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse"  rel="external" class="ui-btn-right">Home</a>
+    </div>
+    <!--/header -->
+    
+    <!-- main content -->
+    <div data-role="content">
+    
+    <!-- banner & title -->
+    <div class="bannerContainer">
+        <img src="assets/images/headers/1.jpg" class="banner">  
+    </div>
+    <h2 class="pageTitle"><span>Searchable List</span></h2>
+    <div class="shadow1box"><img src="assets/images/shadow1.png" class="shadow1" alt="shadow"></div>
+    <!-- /banner & title -->
+    
+    <div class="content-padd">
+        
+    <p>Let the users of your site find the content that <strong>really matters</strong>!</p>
+    
+
+    <!-- list begins -->
+    <div class="padd">  
+    <div data-role="collapsible-set">
+ 
+  <div data-role="collapsible" data-collapsed="false">
+    <h3>Pulled Pork</h3>
+    <img>
+    <p>Description</p>
+  </div>
+ 
+  <div data-role="collapsible">
+    <h3>Baby Back Ribs</h3>
+    <img src="assets/imagesdemo/slides/girl-eating-ribs.jpg">
+    <p>Description</p>
+  </div>
+ 
+</div>          
+
+    </div>
+    <!-- list ends -->
+
+     
+    </div><!-- /content padd -->
+    </div><!-- /content -->
+    
+    <!-- footer -->
     <div data-role="footer">
-        <h4>Page Footer</h4>
-    </div><!-- /footer -->
-</div><!-- /page popup -->
+        <div data-role="navbar" class="custom-icons">
+            <ul>
+                <li><a href="http://bit.ly/yx2mXZ" id="sign" data-icon="custom" data-theme="b">Directions</a></li>
+                <li><a href="tel:18005551234" id="cell" data-icon="custom" data-theme="b">Call Us</a></li>
+                <li><a href="portfolio.html" id="photos2" data-icon="custom" data-theme="b" data-ajax="false">Portfolio</a></li>
+                <li><a href="twitter.html" id="twitter" data-icon="custom" data-theme="b" data-ajax="false">Tweets</a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <!-- /footer -->
+
+    
+</div><!-- /page -->
+
+<!-- add to homepage bubble on iphone, ipad  -->
+<script type="text/javascript">
+	if ('standalone' in navigator && !navigator.standalone && (/iphone|ipod|ipad/gi).test(navigator.platform) && (/Safari/i).test(navigator.appVersion)) {
+		document.write('<link rel="stylesheet" href="assets\/add-bubble\/style\/add2home.css">');
+		document.write('<script type="application\/javascript" src="assets\/add-bubble\/src\/add2home.js" charset="utf-8"><\/s' + 'cript>');
+	}
+</script>
+<!-- /add to homepage bubble on iphone, ipad  --> 
 
 </body>
-
 </html>
