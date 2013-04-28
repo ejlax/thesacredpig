@@ -17,7 +17,7 @@ d)<1/2.75?b*7.5625*a*a+c:a<2/2.75?b*(7.5625*(a-=1.5/2.75)*a+0.75)+c:a<2.5/2.75?b
 JQTWEET = {
 	
 	// Set twitter username and number of tweets
-	user: 'thesacredpig',
+	user: 'ericjadams',
 	numTweets: 10,
 	appendTo: '#jstwitter',
 
