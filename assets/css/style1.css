@@ -320,15 +320,16 @@ h2.pageTitle span {
 .page-header { 
 	border:0px;
 	border-bottom:1px solid #bfc0c0; 
-	background-color:#000; 
+	background-color:#fff !important; 
 	height:60px; 
 	text-shadow: 0 -1px 1px #000; 
 
-	background:url(../images/pattern.png) #111; background-size: 5px 5px;
+	/*background:url(../images/pattern.png) #fff; background-size: 5px 5px;*/
 } 
 
-.logo { 
-	width:231px; 
+.logo {
+	background: url(../images/demo/slides/transparentLogosmall1.png) no-repeat 50% 50%; 
+	width:auto;
 	height:60px; 
 	margin:0 auto;  
 }
@@ -336,12 +337,11 @@ h2.pageTitle span {
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi){
 .logo { 
 	width:231px; 
-	height:40px; 
-	/*background:url(../images/logo.png) top center no-repeat;*/
-	background-color: #000; 
-	background: #000; 
+	height:60px; 
+	background: url(../images/demo/slides/transparentLogosmall1.png) no-repeat 50% 0%;  
 	margin:0 auto;
-	background-size: 185px 40px;
+	background-size: 185px 60px;
+
 }
 }
 
