@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>The Sacred Pig</title> 
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-ipad.png" /> 
-<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-iphone4.png" />
-<link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-ipad3.png" />
+<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-touch-icon-144x144.png" />
 <script>
         if (window.screen.height==568) { // iPhone 4"
         document.querySelector("meta[name=viewport]").content="width=320.1";
@@ -125,9 +128,9 @@
     <div data-role="footer" data-position="fixed">
         <div data-role="navbar" class="custom-icons" data-grid="c" >
             <ul>
-                <li><a href="http://maps.google.com/?daddr=University+of+Utah,Salt+Lake+City,UT,84112" id="map" data-icon="custom" data-theme="c">Find Us!</a></li>
-                <li><a href="tel:18005551234" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
-                <li><a href="#Gallery2" id="brush" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
+                <li><a href="http://maps.google.com/?daddr=University+of+Utah,Salt+Lake+City,UT,84112" id="map-marker" data-icon="custom" data-theme="c">Find Us!</a></li>
+                <li><a href="tel:+18016917675" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
+                <li><a href="#Gallery2" id="photos" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
                 <li><a href="#socialize" id="facebook" data-icon="custom" data-transition="slide" data-theme="c" data-prefetch data-ajax="false">Socialize</a></li>
             </ul>
         </div>
@@ -141,9 +144,9 @@
 
     <!-- header -->
     <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="e">
-        <a href="#" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" data-transition="slide" data-rel="back">>Back</a>
+        <a href="#" data-icon="arrow-l" data-corners="true" data-iconpos="notext" data-direction="reverse" data-transition="slide" data-rel="back">>Back</a>
         <div class="logo"></div>
-        <a href="#home-page" data-icon="home" data-iconpos="notext" data-direction="reverse" data-transition="slide" rel="external" class="ui-btn-right">Home</a>
+        <a href="#home-page" data-icon="home" data-corners="true" data-iconpos="notext" data-direction="reverse" data-transition="slide" rel="external" class="ui-btn-right">Home</a>
     </div>
     <!--/header -->
     
@@ -169,7 +172,7 @@
         <li  class="ui-btn-icon-right ui-li-has-arrow">
             <div class="ui-btn-inner ui-li" aria-hidden="true">
                 <div class="ui-btn-text" data-role="collapsible-set">
-                    <a class="ui-link-inherit" href="#location_uofu">
+                    <a class="ui-link-inherit" href="#location_uofu" data-transition="slide">
                         <p class="ui-li-aside ui-li-desc" >
                             <strong>6:00</strong>
                             PM                      </p>
@@ -188,11 +191,11 @@
         <li class="ui-btn-icon-right ui-li-has-arrow">
             <div class="ui-btn-inner ui-li" aria-hidden="true" >
                 <div class="ui-btn-text">
-                    <a class="ui-link-inherit" href="#location_uvu">
+                    <a class="ui-link-inherit" href="#location_uvu" data-transition="slide">
                         <p class="ui-li-aside ui-li-desc" >
                             <strong>10:30</strong>
                             AM                      </p>
-                        <h3 class="ui-li-heading">UvU Spring Baseball Game</h3>
+                        <h3 class="ui-li-heading">UVU Spring Baseball Game</h3>
                             <p class="ui-li-desc">
                                 <strong>Come meet us for some great food and great baseball, in Orem, UT.</strong>                         </p>
                                 <p class="ui-li-desc"></p>
@@ -241,8 +244,8 @@
         <div data-role="navbar" class="custom-icons" data-grid="c" >
             <ul>
                 <li><a href="http://maps.google.com/?daddr=University+of+Utah,Salt+Lake+City,UT,84112" id="map" data-icon="custom" data-theme="c">Find Us!</a></li>
-                <li><a href="tel:18005551234" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
-                <li><a href="#Gallery2" id="brush" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
+                <li><a href="tel:+18016917675" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
+                <li><a href="#Gallery2" id="photos" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
                 <li><a href="#socialize" id="facebook" data-icon="custom" data-transition="slide" data-theme="c" data-prefetch data-ajax="false">Socialize</a></li>
             </ul>
         </div>
@@ -250,7 +253,7 @@
     </div>
     <!-- /footer -->
 </div> <!-- /page -->
-
+<div data-role="page" id="location_uofu" >
     <!-- header -->
     <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="e">
         <a href="#" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" data-transition="slide" data-rel="back">Back</a>
@@ -275,13 +278,14 @@
     
     
         
-    <h4 align="center">Click on the map to get directions to us!</h4>
+    <p><h3 align="center">Click on the map to get directions to us!</h3>
+    Click on the buttons below and text <strong>'MENU'</strong> or <strong>'WHERE'</strong> to receive a text update on our menu and location.</p>
     
         
    
         <fieldset >
-            <div ><a data-icon="phone" href="sms://+18016917675?body=WHERE" data-role="button" rel="external">Remind Me</a></div>
-            <div ><a data-icon="phone" href="sms://+18016917675?body=MENU" data-role="button" rel="external">What We're Cooking</a></div>
+            <div ><a data-icon="phone" href="sms://+18016917675" data-role="button" rel="external">Remind Me</a></div>
+            <div ><a data-icon="phone" href="sms://+18016917675" data-role="button" rel="external">What We're Cooking</a></div>
         </fieldset> 
 
 
@@ -295,8 +299,8 @@
         <div data-role="navbar" class="custom-icons" data-grid="c" >
             <ul>
                 <li><a href="http://maps.google.com/?daddr=University+of+Utah,Salt+Lake+City,UT,84112" id="map" data-icon="custom" data-theme="c">Find Us!</a></li>
-                <li><a href="tel:18005551234" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
-                <li><a href="#Gallery2" id="brush" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
+                <li><a href="tel:+18016917675" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
+                <li><a href="#Gallery2" id="photos" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
                 <li><a href="#socialize" id="facebook" data-icon="custom" data-transition="slide" data-theme="c" data-prefetch data-ajax="false">Socialize</a></li>
             </ul>
         </div>
@@ -354,8 +358,8 @@
         <div data-role="navbar" class="custom-icons" data-grid="c" >
             <ul>
                 <li><a href="http://maps.google.com/?daddr=University+of+Utah,Salt+Lake+City,UT,84112" id="map" data-icon="custom" data-theme="c">Find Us!</a></li>
-                <li><a href="tel:18005551234" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
-                <li><a href="#Gallery2" id="brush" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
+                <li><a href="tel:+18016917675" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
+                <li><a href="#Gallery2" id="photos" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
                 <li><a href="#socialize" id="facebook" data-icon="custom" data-transition="slide" data-theme="c" data-prefetch data-ajax="false">Socialize</a></li>
             </ul>
         </div>
@@ -411,8 +415,8 @@ And so it was. And so it shall be.</p>
         <div data-role="navbar" class="custom-icons" data-grid="c" >
             <ul>
                 <li><a href="http://maps.google.com/?daddr=University+of+Utah,Salt+Lake+City,UT,84112" id="map" data-icon="custom" data-theme="c">Find Us!</a></li>
-                <li><a href="tel:18005551234" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
-                <li><a href="#Gallery2" id="brush" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
+                <li><a href="tel:+18016917675" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
+                <li><a href="#Gallery2" id="photos" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
                 <li><a href="#socialize" id="facebook" data-icon="custom" data-transition="slide" data-theme="c" data-prefetch data-ajax="false">Socialize</a></li>
             </ul>
         </div>
@@ -453,7 +457,7 @@ And so it was. And so it shall be.</p>
  
   <div data-role="collapsible">
     <h3>The Nasty</h3>
-    <img style="height: 100px; width: 160px; margin-left: 80px;" src="assets/images/demo/slides/rs_junepicks_pulledpork608.jpg">
+    <img style="height: 100px; width: 160px; margin-left: 70px;" src="assets/images/demo/slides/rs_junepicks_pulledpork608.jpg">
         <p>Carolina Style pulled pork, with vinegar cole slaw on a bun. Bottomline, there is no better way to enjoy soggy buns than with our pork.</p>
   </div>
    <div data-role="collapsible">
@@ -462,7 +466,7 @@ And so it was. And so it shall be.</p>
   </div>
   <div data-role="collapsible">
     <h3>Bones</h3>
-    <img style="height: 80px; width: 160px; margin-left: 80px;" src="assets/images/demo/slides/ribs.jpg">
+    <img style="height: 80px; width: 160px; margin-left: 70px;" src="assets/images/demo/slides/ribs.jpg">
     <p>Baby back ribs slow smoked to perfection using a secret dry-rub recipe with cider and mustard base sauces. Be careful, even the bones are soft.</p>
   </div>
  
@@ -480,8 +484,8 @@ And so it was. And so it shall be.</p>
         <div data-role="navbar" class="custom-icons" data-grid="c" >
             <ul>
                 <li><a href="http://maps.google.com/?daddr=University+of+Utah,Salt+Lake+City,UT,84112" id="map" data-icon="custom" data-theme="c">Find Us!</a></li>
-                <li><a href="tel:18005551234" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
-                <li><a href="#Gallery2" id="brush" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
+                <li><a href="tel:+18016917675" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
+                <li><a href="#Gallery2" id="photos" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
                 <li><a href="#socialize" id="facebook" data-icon="custom" data-transition="slide" data-theme="c" data-prefetch data-ajax="false">Socialize</a></li>
             </ul>
         </div>
@@ -556,7 +560,7 @@ And so it was. And so it shall be.</p>
         <a href="fb://profile/174190429324084"><img src="assets/images/social/fb-b.png" alt="facebook"></a>
         <!--  <a href="//qrs.ly/f33200y"><img src="assets/images/social/fb-b.png" alt="facebook"></a>  -->
         <a href="twitter://user?screen_name=thesacredpig"><img src="assets/images/social/twitter-b.png" alt="twitter"></a>
-        <a href="#"><img src="assets/images/social/linkedin-b.png" alt="linkedin"></a>
+        <a href="#"><img src="assets/images/social/yelp-b.png" alt="yelp"></a>
         <a href="//plus.google.com"><img src="assets/images/social/plus-b.png" alt="google+"></a>
         <!--  <a href="//yelp.com"><img src="assets/images/social/yelp-b.png" alt="yelp"></a>  -->
     </div>
@@ -568,8 +572,8 @@ And so it was. And so it shall be.</p>
         <div data-role="navbar" class="custom-icons" data-grid="c" >
             <ul>
                 <li><a href="http://maps.google.com/?daddr=University+of+Utah,Salt+Lake+City,UT,84112" id="map" data-icon="custom" data-theme="c">Find Us!</a></li>
-                <li><a href="tel:18005551234" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
-                <li><a href="#Gallery2" id="brush" data-icon="custom" data-theme="c" data-prefetch>Pics</a></li>
+                <li><a href="tel:+18016917675" id="cell" data-icon="custom" data-theme="c">Call Us</a></li>
+                <li><a href="#Gallery2" id="photos" data-icon="custom" data-theme="c" data-prefetch>PIcs</a></li>
                 <li><a href="#socialize" id="facebook" data-icon="custom" data-transition="slide" data-theme="c" data-prefetch data-ajax="false">Socialize</a></li>
             </ul>
         </div>
@@ -579,6 +583,69 @@ And so it was. And so it shall be.</p>
 
     
 </div><!-- /page -->
+<!-- gallery 2 -->
+<div data-role="page" data-theme="e" data-add-back-btn="true" id="Gallery2" class="gallery-page page-header" style="background:#111">
+<!--  Page AJAX -->
+    <script src="assets/portfolio/lib/klass.min.js"></script>
+    <script src="assets/portfolio/code.photoswipe.jquery-3.0.5.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/portfolio/photoswipe.css">
+    
+    <script type="text/javascript">
+        (function(window, $, PhotoSwipe){
+            $(document).ready(function(){
+                $('div.gallery-page')
+                    .live('pageshow', function(e){
+                        var 
+                            currentPage = $(e.target),
+                            options = {},
+                            photoSwipeInstance = $("ul.gallery a", e.target).photoSwipe(options,  currentPage.attr('id'));
+                        return true;
+                    })
+                    
+                    .live('pagehide', function(e){
+                        
+                        var 
+                            currentPage = $(e.target),
+                            photoSwipeInstance = PhotoSwipe.getInstance(currentPage.attr('id'));
+
+                        if (typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
+                            PhotoSwipe.detatch(photoSwipeInstance);
+                        }
+                        return true;
+                    });
+            });
+        }(window, window.jQuery, window.Code.PhotoSwipe));
+    </script>
+    <div data-role="header" class="page-header">
+    <a href="index.html" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" data-rel="back" rel="external">Back</a>
+        <h1>Second Gallery</h1>
+    </div>
+
+    <div data-role="content" style="background:#111">   
+    
+    <div class="content-padd">
+        
+        <ul class="gallery">
+        
+            <li><a href="assets/images/demo/slides/ribs.jpg" rel="external"><img src="assets/images/demo/slides/ribs.jpg" alt="Damn these are good!" /></a></li>
+            <li><a href="assets/images/demo/slides/carolina-style-pulled-pork8.jpg" rel="external"><img src="assets/images/demo/slides/carolina-style-pulled-pork8.jpg" alt="Carolina Style" /></a></li>
+            <li><a href="assets/images/demo/slides/ribfest-055.jpg" rel="external"><img src="assets/images/demo/slides/ribfest-055.jpg" alt="Rib Fest Baby!" /></a></li>
+            <li><a href="assets/images/demo/slides/rs_junepicks_pulledpork608.jpg" rel="external"><img src="assets/images/demo/slides/rs_junepicks_pulledpork608.jpg" alt="The Nasty!" /></a></li>
+            <li><a href="assets/images/demo/slides/Slow-Cooker-Pulled-Pork.jpg" rel="external"><img src="assets/images/demo/slides/Slow-Cooker-Pulled-Pork.jpg" alt="An Amazing Image!" /></a></li>
+            <li><a href="assets/portfolio/images/2L.jpg" rel="external"><img src="assets/portfolio/images/2s.jpg" alt="Image Title Here" /></a></li>
+            <li><a href="assets/portfolio/images/1L.jpg" rel="external"><img src="assets/portfolio/images/1s.jpg" alt="An Amazing Image!" /></a></li>
+            <li><a href="assets/portfolio/images/2L.jpg" rel="external"><img src="assets/portfolio/images/2s.jpg" alt="Image Title Here" /></a></li>
+            <li><a href="assets/portfolio/images/1L.jpg" rel="external"><img src="assets/portfolio/images/1s.jpg" alt="An Amazing Image!" /></a></li>
+        </ul>
+        
+        <p class="gal-description">Click an image to enlarge.</p>
+        
+    </div><!-- /content padd -->
+    </div><!-- /content -->
+
+</div>
+<!-- /gallery 2 -->
 
 <!-- add to homepage bubble on iphone, ipad  -->
 <script type="text/javascript">
