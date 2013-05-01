@@ -329,9 +329,11 @@ h2.pageTitle span {
 
 .logo {
 	background: url(../images/demo/slides/transparentLogosmall1.png) no-repeat 50% 50%; 
-	width:auto;
+	width:231px;
 	height:60px; 
 	margin:0 auto;  
+	background-size: 185px 60px;
+
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-resolution:240dpi){
